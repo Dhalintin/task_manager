@@ -49,11 +49,10 @@ This is a Task Management API built using Node.js, Express, and MongoDB. It prov
    ```sh
    npm install
    ```
-3. Create a `.env` file and add the following variables:
+3. Create a `.env` by making a copy of the .env.example file and add the fill in the variables
    ```env
    PORT=5000
-   MONGO_URI=your_mongodb_connection_string
-   JWT_SECRET=your_jwt_secret
+   MONGO_URI=your_mongodb_connection_string.......
    ```
 4. Start the server:
    ```sh
