@@ -80,11 +80,17 @@ This is a Task Management API built using Node.js, Express, and MongoDB. It prov
 
 #### BY ADMIN
 
--   `POST /api/tasks` - Create a new task
--   `GET /api/tasks` - Retrieve all tasks with filtering and sorting
--   `GET /api/tasks/:id` - Retrieve a specific task
--   `PUT /api/tasks/:id` - Update a task
--   `DELETE /api/tasks/:id` - Delete a task
+-   `POST /api/admin/tasks` - Create a new task
+-   `GET /api/admin/tasks` - Retrieve all tasks with filtering and sorting
+-   `GET /api/admin/tasks/:id` - Retrieve a specific task
+-   `PUT /api/admin/tasks/:id` - Update a task
+-   `DELETE /api/admin/tasks/:id` - Delete a task
+
+### Check collection title
+
+`task manager.postman_collection`
+
+for endpoint usage examples
 
 ## License
 
