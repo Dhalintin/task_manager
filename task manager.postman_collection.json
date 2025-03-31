@@ -88,7 +88,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/api/v1/task/67e5e4144d263511957c9386",
+					"raw": "http://localhost:3000/api/user/logout",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -96,9 +96,8 @@
 					"port": "3000",
 					"path": [
 						"api",
-						"v1",
-						"task",
-						"67e5e4144d263511957c9386"
+						"user",
+						"logout"
 					]
 				}
 			},
@@ -117,7 +116,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"assignedTo\": \"67e5e4144d263511957c9386\"\r\n}",
+					"raw": "{\r\n    \"title\" : \"New Task\",\r\n    \"description\": \"A description of task\",\r\n    \"priority\": \"Medium\",\r\n    \"status\": \"Pending\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -230,7 +229,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/api/v1/task/",
+					"raw": "http://localhost:3000/api/task/?page=1&limit=1&sort=status&order=asc",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -238,9 +237,26 @@
 					"port": "3000",
 					"path": [
 						"api",
-						"v1",
 						"task",
 						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "1"
+						},
+						{
+							"key": "sort",
+							"value": "status"
+						},
+						{
+							"key": "order",
+							"value": "asc"
+						}
 					]
 				}
 			},
